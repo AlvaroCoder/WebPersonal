@@ -1,0 +1,11 @@
+[
+    {"curso":"CalculoVectorial","tema":"FuncionesVectoriales","nro":1,"ejercicio":{
+        "pregunta":"La función vectorial de variable f"
+    }},
+    {"curso":"CalculoVectorial","tema":"Integrales Dobles","nro":1,"ejercicio":{
+        "pregunta":"Estime el volumen del sólido que yace debajo de la superficie z=xy y arriba del rectángulo", "blockeq":"R={(x,y)|0<x<6,0<y<4}"
+    }},
+    {"curso":"CalculoVectorial","tema":"FuncionesVectoriales","ejercicio":{
+        "pregunta":"Encuentre el dominio de la función", "blockeq":"f(x,y)=\\sqrt{4-x^2-y^2}"
+    }}
+]

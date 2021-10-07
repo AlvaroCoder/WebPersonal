@@ -1,0 +1,91 @@
+@font-face {
+    font-family: tipo-Timer;
+    src: url("../Tipografias/Rubik-VariableFont_wght.ttf");
+}
+.container-Pomodoro{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.content-item-sidebar{
+    padding: 0%;
+}
+.item-sidebar{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+.item-sidebar-active{
+    list-style: none;
+    color: tomato;
+    text-decoration: none;
+}
+#sidebar{
+    flex-direction: column;
+    background-color: rgb(34, 53, 53);
+}
+
+.bg-Pomodoro{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.5fr;
+}
+.ctn-bg-Pomodoro{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.timer-Pomodoro{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(58, 58, 77);
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    font-family: tipo-Timer;
+}
+.content-Pomodoro{
+    width: 350px;
+    height: 300px;
+    margin-left: 15px;
+}
+
+.sec-time-Pomodoro{
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: repeat(2, 8vh);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+select{
+    width: 200px;
+    height: 30px;
+    font-size: 1.1em;
+    background-color: rgba(230, 230, 230, 0.705);
+    border-radius: 10px;
+    color: rgb(20, 20, 20);
+}
+.sec-btn-Pomodoro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-Pomodoro{
+    background-color: rgb(89, 89, 148);
+    width: 150px;
+    height: 35px;
+    border:none;
+    border-radius: 10px;
+    color: white;
+}
