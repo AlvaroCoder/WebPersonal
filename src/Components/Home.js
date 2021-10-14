@@ -104,7 +104,7 @@ export default function Body() {
             <div className="bg-yt">
                 <div className="img-bg-yt"></div>
                 <div className="txt-bg-yt">
-                    <h3>YOUTUBE</h3>
+                    <h3>YOUTUBER</h3>
                 </div>
             </div>
             <div className="bg-scmedia">
