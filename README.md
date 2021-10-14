@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 This a personal project as Beginner Developer and Engeenering student enjoy it !
 
@@ -72,3 +73,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# WebPersonal
+Pagina web personal, desarrollada en React con node.js y express
+>>>>>>> 105ee42203bc017818cbe8333cd20386bbf9f247
