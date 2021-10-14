@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import Blog from "../BaseDatos/BDArticulos.json"
 import Image1 from "../Imagenes/Edicion de Foto 1.4.png"
 import Skills from './Skills';
+import PomodoroImage from "../Imagenes/Icon Pomodoro.png"
+import TresenLineaImage from "../Imagenes/Icon 3 en línea.png"
 export default function Body() {
     const [articulos, setArticulos] = useState([])
     useEffect(() => {
@@ -13,8 +15,8 @@ export default function Body() {
     },[])
     const myProyects = [
         {key:1,id:"Project1",img:"https://images.unsplash.com/photo-1600493033157-eed3fbe95d96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",nombre:"Calculadora Quimica",descripcion:"Calcula el Peso Molecular de un compuesto, balancea una fórmula química y descubre datos curiosos de los compuestos químicos más comúnes.",ruta:"/Projects/CalculadoraQuimica"},
-        {key:2,id:"Project2",img:"https://media.istockphoto.com/photos/vintage-antique-snakes-and-ladders-board-game-picture-id1075478326?s=612x612",nombre:"Tres en línea",descripcion:"Inspirado en el juego de infancia, desafía a la computadora o a otro amigo. Anímate a pasar un buen rato.",ruta:"/Projects/TresEnLínea"},
-        {key:3,id:"Project3",img:"https://media.istockphoto.com/photos/pomodoro-technique-picture-id509630263?s=612x612",nombre:"Pomodoro",descripcion:"La técnica de Pomodoro, ayuda a estudiar o trabajar de una manera más eficiente. Organízate y mide tu tiempo de productividad.",ruta:"/Projects/Pomodoro/Home"},
+        {key:2,id:"Project2",img:TresenLineaImage,nombre:"Tres en línea",descripcion:"Inspirado en el juego de infancia, desafía a la computadora o a otro amigo. Anímate a pasar un buen rato.",ruta:"/Projects/TresEnLínea"},
+        {key:3,id:"Project3",img:PomodoroImage,nombre:"Pomodoro App",descripcion:"La técnica de Pomodoro, ayuda a estudiar o trabajar de una manera más eficiente. Organízate y mide tu tiempo de productividad.",ruta:"/Projects/Pomodoro/Home"},
     ]
     const myHobbies=[
         {key:1,name: "Programación",percentage :80},

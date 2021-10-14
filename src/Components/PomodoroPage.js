@@ -22,7 +22,7 @@ export default function PomodoroPage() {
             setCounter(c=>c-1)
             console.log(centinela);
             centinela++
-            if (centinela === 11) {
+            if (centinela === maxTime) {
                 if (textPom === "Focus") {
                     let valTime = parseInt(timeBreak.split(":")[0])*60
                     console.log("Empezo el break");
