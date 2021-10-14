@@ -1,18 +1,39 @@
 body{
-    font-family:Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Helvetica, sans-serif;
     margin: 0%;
     padding: 0%;
 }
 #container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 95vh 60vh 130vh 60vh 160vh 80vh 80vh 10vh ;
+    grid-template-rows: 8vh 96vh  160vh 60vh 160vh 80vh 80vh 10vh ;
+}
+.container-all-article{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 8vh auto 10vh;
+}
+ul{
+    margin: 0%;
 }
 header{
     width: 100%;
     height: 8vh;
     background-color: #1c171f;
     text-align: center;
+}
+.ctn-icon-web{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 20%;
+}
+.logo{
+    font-family: Bodoni;
+    color: #ffdca9;
+    font-size: 2.1em;
+    margin: 0%;
+    margin-top: 5px;
 }
 .link-style{
     text-decoration: none;
@@ -21,12 +42,11 @@ header{
     list-style: none;
     display: inline-block;
     margin-left: 20px;
-    border-radius: 10px;
     padding: 10px;
     cursor: pointer;
 }
 .nav-item:hover{
-    background-color: #27212bcc;
+   border-bottom: solid 3px #c51f3a ;
 }
 .bg-header{
     font-size: 1rem;
@@ -40,6 +60,8 @@ header{
 }
 .name-bold{
     color: #ce1d3f;
+    font-family: Bodoni;
+    font-weight: 700;
 }
 .name-2{
     font-size: 1.2em;
@@ -72,16 +94,17 @@ header{
     width: 500px;
 }
 .bg-about{
-    background-color: rgb(226, 226, 226);
+    background-color: #211c24;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3;
+    z-index: 1;
 }
 #ctn-txt-about{
     width: 400px;
     height: 40vh;
     margin-left: 10px;
+    color: white;
 }
 #ctn-txt-about{
     padding-left: 1pc;
@@ -90,15 +113,25 @@ header{
     width: 300px;
     height: 300px;
     position: relative;
-    background-color: rgb(51, 63, 63);
+    background-color: #ffdca9;
     border-radius: 50%;
 }
-
+.img-about{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
 .sbttl-1{
     display: block;
     position: relative;
     margin-top: 4pc;
     width: auto;
+    font-size: 2em;
+    font-weight: 700;
+}
+.desc-1{
+    font-weight: 300;
+    font-size: 0.9em;
 }
 .desc-2{
     width: 250px;
@@ -106,9 +139,23 @@ header{
 .sbttl-1::before{
     position: absolute;
     content: "";
-    width: 70px;
-    height: 30px;
-    border-bottom: 2px solid darkgoldenrod;
+    width: 80px;
+    height: 40px;
+    border-bottom: 3px solid #e5b780;
+}
+.sbttl-2{
+    position: relative;
+}
+.sbttl-2::before{
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    border-bottom: 3px #e5b780 solid;
+}
+.sbttl-3{
+    font-weight: 200;
+    color: gray;
 }
 .bg-proyects{
     display: flex;
@@ -118,14 +165,46 @@ header{
 }
 #ctn-proyect{
     display: grid;
-    grid-template-columns: repeat(auto-fill,290px);
-    grid-gap: 15px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,300px);
+    row-gap: 20px;
     height: auto;
-    width: 900px;
+    width: 800px;
 }
 .ctn-proyect-card{
-    background-color: darkgrey;
-    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 10px 8px 5px  rgba(212, 212, 212, 0.87);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-img-proyect{
+    width: 250px;
+    height: 250px;
+    background-color: honeydew;
+}
+.img-proyect{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+.ctn-txt-proyect{
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.btn-proyect{
+    width: fit-content;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 117);
+    color: white;
 }
 .bg-hobbies{
     background-color: #1c171f;
@@ -156,19 +235,23 @@ header{
 .ctn-title-blog{
     width: 950px;
     height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .ctn-blog{
-    width: 800px;
+    width: 850px;
     height: 120vh;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,400px));
+    grid-template-columns: repeat(auto-fill,minmax(300px,400px));
     grid-template-rows: 60vh 60vh;
     grid-template-areas: 
     "cardBlog1 cardBlog2"
     "cardBlog3 cardBlog4"
     ;
 
-    column-gap: 15px;
+    column-gap: 30px;
     row-gap: 10px   ;
 }
 .ctn-blog-card{
@@ -191,6 +274,10 @@ header{
 }
 .img-blog-card{
     background-color: gray;
+}
+.img-blog{
+    width: 400px;
+    height: 250px;
 }
 .txt-blog-card{
     display: flex;

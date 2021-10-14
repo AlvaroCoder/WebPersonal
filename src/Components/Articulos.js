@@ -6,7 +6,7 @@ export default function Articulos({Nav,Footer}) {
     const [busqueda, setBusqueda] = useState("")
     useEffect(() => {
         Blog.forEach((val)=>{
-            setArticulo(art=>[...art,{key : val.key, title: val.titulo, description : val.descripcion, tag : val.tema, time : val.fecha}])
+            setArticulo(art=>[...art,{key : val.key, title: val.titulo, description : val.descripcion, tag : val.tema, time : val.fecha, img_Fondo:val.img_Fondo}])
         })
     }, [])
     const handleBusqueda = (event)=>{
@@ -27,11 +27,7 @@ export default function Articulos({Nav,Footer}) {
                 <div className="ctn-art">
                     {
                         articulo.map((val)=>{
-                            if (val.key <= 3) {
-                                return <BlogCard props={val}></BlogCard>
-                            }else{
-                                return null
-                            }
+                            return <BlogCard key={val.key} props={val}></BlogCard>
                         })
                     }
                 </div>

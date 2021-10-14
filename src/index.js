@@ -1,12 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./Assets/Home.css"
 import "./Assets/Articulos.css"
 import "./Assets/Pomodoro.css"
+import "./Assets/ArticulosPage.css"
 
-ReactDOM.render(
+render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
