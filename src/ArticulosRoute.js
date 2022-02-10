@@ -8,7 +8,7 @@ export default function ArticulosRoute() {
                 {
                     BaseDatos.map((val)=>{
                         return(
-                            <Route path={val.ruta} render={()=><PlantillaArticulo props={val}></PlantillaArticulo>}></Route>
+                            <Route exact path={val.ruta} key={val.key} render={()=><PlantillaArticulo props={val}></PlantillaArticulo>}></Route>
                         )
                     })
                 }

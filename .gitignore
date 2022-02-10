@@ -24,3 +24,9 @@ yarn-error.log*
 
 #Componentes innecesarios 
 /src/reportWebVitals.js
+/src/Assets
+/src/BaseDatos/BDArticulos.json
+/src/Imagenes/BannerListas_Matrices.png
+/src/Imagenes/Edicion de Foto PS12.png
+/src/Imagenes/Foto2.0SinBack.png
+/src/ArticulosRoute.js

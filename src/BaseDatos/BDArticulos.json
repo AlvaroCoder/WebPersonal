@@ -1,5 +1,11 @@
-[
-    {"key":0,"id":"blog-card-1","titulo":"Recopilación de 5 libros TOP para pasar cálculo (+PDF).","descripcion":"Como estudiante de ingienería, cálculo, es una materia que se requiere de mucha práctica, pero con estos libros el aprendizaje se hace más sencillo y didáctico.","ruta":"/Articulos/Recopilación+de+5+libros+TOP","tema":"Cálculo","fecha":"02/08/2021","author":"Alvaro Felipe",
+[   
+    {
+    "key":0,"titulo":"¿Por qué aprender a programar?","descripcion":"Cada día muchas más empresas necesitan de una página web, o de una aplicación específica que le resuelva algún problema.","ruta":"/Articulos/Porque+aprender+a+programar","tema":"Cálculo","fecha":"21/11/2021",
+    "cuerpo":[
+        
+    ]
+    },
+    {"key":1,"titulo":"Pasa cálculo con estos 5 libros","descripcion":"Como estudiante de ingienería, cálculo, es una materia que se requiere de mucha práctica, pero con estos libros el aprendizaje se hace más sencillo y didáctico.","ruta":"/Articulos/Recopilación+de+5+libros+TOP","tema":"Cálculo","fecha":"02/08/2021","author":"Alvaro Felipe",
     "img_Fondo":"https://images.unsplash.com/photo-1556917455-d21a5def6d12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80","desc_img":"lorem ipsum",
     "cuerpo":[
         {"tipo":"parrafo","contenido":"En mi carrera, uno de los cursos más complicados de entender y aprobar, fue cálculo diferencial y vectorial. Por eso hoy les traigo estos libros TOP, recomendados por mis profesores, de nivel intermedio y avanzado. Algunos de ellos son didácticos y van directo al “grano”; mientras que, otros son para aquellos que desean leer matemáticas."},
@@ -13,24 +19,7 @@
         {"tipo":"lista","contenido":["Sistemas de Números Reales","Relaciones y Funciones","Límites y continuidad","La derivada"]}
     ]
     },
-    {"key":1,"id":"blog-card-2","titulo":"¿Cómo se fabrica la nieve artificial?","descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","ruta":"/Articulos/Como+se+fabrica+la+nieve+artificial","tema":"Química","fecha":"02/08/2021","author":"Alvaro Felipe",
-    "img_Fondo":"https://images.unsplash.com/photo-1457269449834-928af64c684d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
-    "cuerpo":[
-        {"tipo":"parrafo","contenido":"Si alguna vez has esquiado, sabrás que muchas veces se hace uso de cañones de nieve artificial. Para así, compensar la demanda de esquiadores, ante las pocas precipitaciones que se vienen presentando en las montañas. Pero antes de hablar de explicar su funcionamiento químico, veamos un poco de su historia."},
-        {"tipo":"sbttle","contenido":"Historia"},
-        {"tipo":"parrafo","contenido":"La creación de nieve ocurrió por error. En un laboratorio en Canadá el equipo del Dr. Ray Ringer, estaba en busca de hielo escarcha, a partir del rocío del agua, en el túnel de viento de baja temperatura, por el año de 1940."},
-        {"tipo":"parrafo","contenido":"Los intentos de la comercialización del cañón de nieve empezaron con Wayne Pierce, junto a sus compañeros Art Hunt y Dave Richey. Juntos formaron la Tey Manufacturing Company of Milford, en Connecticut, en el año de 1947. Pero tiempo después la naturaleza mandó un invierno frío y seco haciendo que la venta de su cañón de nieve disminuyera. Las ventas de la compañía iban en ascenso hasta que, en 1956, decidieron venderla a Emhart Corporation con las patentes de la máquina de nieve."},
-        {"tipo":"sbttle","contenido":"Funcionamiento"},
-        {"tipo":"parrafo","contenido":"El misterio que se esconde detrás de la producción de nieve se puede resolver con la ecuación de la variación de energía interna de un sistema:"},
-        {"tipo":"ecuacion","contenido":"\\triangle U=q+w"},
-        {"tipo":"parrafo","contenido":"Un cañón de nieve contiene una mezcla de aire comprimido y vapor de agua a 20 atm. Debido a esta gran diferencia de presiones, entre el cañón y la atmósfera, es que cuando se libera la mezcla, no ocurre un intercambio de calor (es decir q=0) entre el sistema y sus alrededores, lo cual termodinámicamente se llamaría un proceso adiabático. Por tanto, la ecuación quedaría reducida a:","ecuacion":"\\triangle U= w"},
-        {"tipo":"img","src":"https://th.bing.com/th/id/OIP.uxZp2pkv9lTSQdXGT13iQAHaE8?pid=ImgDet&w=1200&h=800&rs=1","alt":"Img-de-cannon-de-nieve","desc":"figura 1.1"},
-        {"tipo":"parrafo","contenido":"Ahora, como el cañón libera la mezcla de aire comprimido hacia el exterior, está produciendo un incremento del número de moles en el ambiente, por tanto, está realizando un trabajo sobre los alrededores del sistema, siendo el valor del trabajo negativo. Entonces la variación de energía también será negativa."},
-        {"tipo":"parrafo","contenido":"En la energía interna, participa la energía cinética molecular, la cual es proporcional a la temperatura absoluta de un gas.","ecuacion":"\\triangle U=C\\triangle T"},
-        {"tipo":"parrafo","contenido":"Donde 'C' es la constante de proporcionalidad. Y la “T” es la temperatura medida en grados Kelvin, la cual también será negativa. Es de mencionar, que se requieren de ciertas condiciones ambientales, para la óptima generación de nieve (50% de humedad en el ambiente y temperaturas próximas a los 0 grados), además de presencia de aire que se enfriará conforme se expanda el vapor de agua."}
-    ]
-    },
-    {"key":2,"id":"blog-card-3","titulo":"¿Como empezar a programar una aplicación?","descripcion":"Al principio, programar, puede ser frustrante, pero no te desanimes, que así empezaron los grandes programadores, sigue así 😊.","ruta":"/Articulos/Como+empezar+a+programar","tema":"Programación","fecha":"02/08/2021",
+    {"key":2,"titulo":"¿Como empezar a programar en el siglo 21?","descripcion":"Al principio, programar, puede ser frustrante, pero no te desanimes, que así empezaron los grandes programadores, sigue así 😊.","ruta":"/Articulos/Como+empezar+a+programar","tema":"Programación","fecha":"02/08/2021",
         "img_Fondo":"https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
         "cuerpo":[
             {"tipo":"parrafo","contenido":"El arte de programar requiere de mucha práctica, para algunos, cuando se empieza. No todos se les hace simple escribir código y ‘pensar’ como una máquina. Lo cual no es malo, pues al igual que otras asignaturas o temas, se requiere de horas de práctica, al menos en sus inicios. La ventaja es que, en este caso, el mejor maestro de un programador es la computadora. Ella nos dará el resultado de lo escrito en código, ya sea un error o una respuesta; nosotros evaluaremos si el resultado es el esperado o no."},
@@ -40,19 +29,25 @@
             {"tipo":"parrafo","contenido":"Después de haber entendido el problema, lo recomendable es tomar un papel y boli, escribir como vas a solucionarlo, sin necesidad de escribir en un lenguaje de programación específico, puedes hacer esquemas, gráficos o puedes empezar escribiendo pseudocódigo. Por ejemplo, si deseo que se muestre en pantalla un triángulo de números de manera ascendente, que llegue hasta la columna 5, escribiría algo como esto."}
         ]
     },
-    {"key":3,"id":"blog-card-4","titulo":"Listas enlazadas","descripcion":"Las listas enlazadas son los algoritmos de programación fundamentales, indispensables en las entrevistas de desarrollo web.","ruta":"/Articulos/Listas+enlazadas","tema":"Programación","fecha":"02/08/2021",
+    {"key":3,"titulo":"Listas enlazadas en JAVA","descripcion":"Las listas enlazadas son los algoritmos de programación fundamentales, indispensables en las entrevistas de desarrollo web.","ruta":"/Articulos/Listas+enlazadas","tema":"Estructura de datos","fecha":"02/08/2021",
         "img_Fondo":"https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80",
         "cuerpo":[
             {"tipo":"parrafo","contenido":"En mi carrera, uno de los cursos más complicados de entender y aprobar, fue cálculo diferencial y vectorial. Por eso hoy les traigo estos libros TOP, recomendados por mis profesores, de nivel intermedio y avanzado. Algunos de ellos son didácticos y van directo al “grano”; mientras que, otros son para aquellos que desean leer matemáticas."},
-            {"tipo":"sbttle","nombre":"1. Cálculo de una variable-James Stewart","contenido":"Este libro es el favorito de muchos estudiantes en sus primeros ciclos. Su presentación es impecable, su forma de abordar los temas complicados es fascinante, porque lo hace de una manera sencilla y didáctica, comprensible por cualquiera. Además, contiene una gran variedad de ejercicios teórico-prácticos. Entre los temas que aborda tenemos:"},
+            {"tipo":"ssbttle","nombre":"1. Cálculo de una variable-James Stewart","contenido":"Este libro es el favorito de muchos estudiantes en sus primeros ciclos. Su presentación es impecable, su forma de abordar los temas complicados es fascinante, porque lo hace de una manera sencilla y didáctica, comprensible por cualquiera. Además, contiene una gran variedad de ejercicios teórico-prácticos. Entre los temas que aborda tenemos:"},
             {"tipo":"lista","listado":"bullet","contenido":["Funciones de una variable","Límites y derivadas","Reglas de derivación","Aplicación de la derivada","Integrales","Aplicación de las integrales","Técnicas de integración","Ecuaciones diferenciales"]},
             {"tipo":"btn","clasificación":"link","nombre":"Link de descarga","link":"https://mega.nz/file/HzZjTIhJ#DCFtcC9chuIul0_AVtKOOwJpHMTP215kKivqS5cbrio"}
         ]
         },
-    {"key":4,"id":"blog-card-5","titulo":"¿Como hallar el dominio de las funciones vectoriales? (+3 ejemplos)","descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "ruta":"/Articulos/Como+hallar+el+dominio+de+las+funciones+vectoriales","tema":"Cálculo","fecha":"07/10/2021",
-        "img_Fondo":"https://images.unsplash.com/photo-1615309661755-816dcd80bcd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+    {
+        "key":4, "titulo":"Bucle foreach en JAVA", "descripcion":"El bucle foreach es como un bucle for, pero mejorado, permite recorrer arreglos de una manera más simplificada", "ruta":"/Articulos/Bucle+for+each+en+JAVA","tema":"JAVA","fecha":"16/12/2021","img_Fondo":"",
         "cuerpo":[
-            {"tipo":"parrafo","contenido":"Como estudiante de ingeniería, para resolver estos problemas con éxito y no morir en el intento, les recomiendo, seguir estos pasos para su análisis:"},
-            {"tipo":"lista","contenido":["Determinar las funciones componentes o coordenadas","Determinar el dominio de cada función componente, por separado.","Unimos los valores de los dominios, para la cual la función vectorial es continua, es decir intersecamos sus valores y damos la respuesta."]}
-        ]}
+            {"tipo":"sbttle","contenido":"1. ¿Que es el bucle foreach?"},
+            {"tipo":"parrafo", "contenido":"Otra manera de recorrer un arreglo en JAVA, es usando el bucle “for-each”, es como un bucle “for” mejorado. "},
+            {"tipo":"sbttle","contenido":"2. Bucle for vs bucle for-each "},
+            {"tipo":"parrafo","contenido":"La sintaxis del bucle for-each, es similar a la del bucle for. Veamos un ejemplo de ambos para notar la diferencia:"},
+            {"tipo":"codigo","clase":"Main.java", "codigo":[
+                "//HTML Y JAVASCRIPT","system.out.println()"
+            ]}
+        ]
+    }
 ]

@@ -1,8 +1,10 @@
 import React from 'react'
 import Footer from './Footer'
-import Nav from './Nav'
+import {Nav} from '../Elements/Nav'
 import {BlockMath} from "react-katex";
 import 'katex/dist/katex.min.css';
+
+
 export default function PlantillaArticulo({props}) {
     const {titulo,descripcion,author,fecha,img_Fondo,desc_img,cuerpo} = props
     return (
@@ -35,7 +37,7 @@ export default function PlantillaArticulo({props}) {
                                     </div>
  
                                 )
-                            }if (val.tipo ==="sbttle") {
+                            }if (val.tipo === "sbttle") {
                                 return(
                                     <div className="sec-sbttle">
                                         <h2 className="sbttle">{val.contenido}</h2>
@@ -67,6 +69,20 @@ export default function PlantillaArticulo({props}) {
                                 return(
                                     <div className="sec-ecuacion">
                                         <BlockMath>{val.contenido}</BlockMath>
+                                    </div>
+                                )
+                            }
+                            if (val.tipo === "codigo") {
+                                return(
+                                    <div className='sec-codigo'>
+                                        <h2>{val.clase}</h2>
+                                        <code className='languaje-java'>
+                                        {
+                                            val.codigo.map((linea)=>{
+                                                return <span>{linea}</span>
+                                            })
+                                        }
+                                        </code>
                                     </div>
                                 )
                             }

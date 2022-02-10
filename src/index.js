@@ -2,11 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import "./Assets/Home.css"
-import "./Assets/Articulos.css"
-import "./Assets/Pomodoro.css"
-import "./Assets/ArticulosPage.css"
+import "./Styles/Home.css"
 
 render(
   <React.StrictMode>
@@ -16,4 +12,3 @@ render(
 );
 
 
-reportWebVitals();
