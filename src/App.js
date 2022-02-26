@@ -3,10 +3,11 @@ import  {BrowserRouter,Switch,Route} from "react-router-dom";
 import { Nav } from "./Elements/Nav";
 import About from "./Components/About";
 import Proyectos from "./Components/Proyectos";
+import Contact from "./Components/Contact";
+import LostPage from "./Components/404";
 function App() {
   return(
     <BrowserRouter>
-      <div id="wave3"></div>
       <div id="container">
         <Nav></Nav>
         <Switch>
@@ -20,7 +21,13 @@ function App() {
             <About></About>
           </Route>
           <Route path="/Projects">
-          <Proyectos></Proyectos>
+            <Proyectos></Proyectos>
+          </Route>
+          <Route path="/Contact">
+            <Contact></Contact>
+          </Route>
+          <Route>
+            <LostPage></LostPage>
           </Route>
         </Switch>
       </div>

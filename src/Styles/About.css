@@ -1,0 +1,142 @@
+#ctn-about{
+    width: 100%;
+    height: auto;
+}
+.ctn-intro-about{
+    background-color: #1D3557;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ctn-hacker, .ctn-panel-hacker{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.ctn-hacker{
+    justify-content: flex-end;
+}
+.ctn-panel-hacker{
+    align-items: center;
+}
+#panel-hacker{
+    position: relative;
+    width: 495px;
+    height: 295px;
+    background-color:#F1FAEE;
+    border-radius: 15px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -6px 7px 5px -2px rgba(241,250,238,0.40);
+    -webkit-box-shadow: -6px 7px 5px -2px rgba(241,250,238,0.40);
+    -moz-box-shadow: -6px 7px 5px -2px rgba(241,250,238,0.40);}
+span{
+    align-self: center;
+}
+#panel-sup{
+    position: relative;
+    width: 495px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #E63946;
+    border-radius: 15px 15px 0px 0px;
+}
+#panel-inf{
+    width: 495px;
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn-yellow, #btn-green{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: #1D3557 2px solid;
+}
+#btn-yellow{
+    background-color: orange;
+}
+#btn-green{
+    background-color: rgb(67, 211, 67);
+}
+#hacker{
+    width: 298px;
+    height: 336px;
+    background-image: url("../icons/HackerIcon.png");
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+#text-animate{
+    color: #1D3557;
+    font-weight: 500;
+    font-size: 2rem;
+    white-space: nowrap;
+    border-right: 4px solid #1D3557;
+    width: 21ch;
+
+    animation: typing 6s steps(18) infinite, blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    0%{
+        width: 0px;
+    }75%{
+        width: 21ch;
+    }100%{
+        width: 0px;
+    }
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+#content-cv{
+    font-size: 1.2rem;
+}
+#btn-download{
+    width: 200px;
+    height: 60px;
+    background-color: #A8DADC;
+    color: #1D3557;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#ctn-cv{
+    width: 100%;
+    height: 685px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#img-cv{
+    background-image: url("../icons/CV.png");
+    width: 445px;
+    height: 448px;
+    animation: cvMove 4s ease-in-out infinite;
+}
+@keyframes cvMove {
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: -60px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}

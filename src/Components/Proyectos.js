@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import { Loading } from '../Elements/Loading';
-
+import {Project} from "../Elements/Project";
 
 function Proyectos() {
     const [loading, setLoading] = useState(true);
@@ -12,28 +12,27 @@ function Proyectos() {
         clearTimeout(timer)
       };
     }, []);
-    
+    const dataProjects = [
+      {idProject : 1,projectImg : "",nameProject : "Daily Planner", classification : [{name : "Desktop App"}], language : [{name : "JAVA"}, {name : 'MYSQL'}], description : "Create task and finish it", difficulty : 'Medium', link : 'https://github.com/AlvaroCoder/AppTareario', pageLink : null},
+      {idProject: 2, projectImg:"",nameProject : "Merge Algorithm Visualizer",classification:[{name: "Design"}, {name:"Frontend"}] ,language: [{name : "React"}]},
+      {idProject: 3, projectImg:"",nameProject : "Discord Bot", classification : [{name:"Backend"}], language : [{name: "Python"}], description : "Simple bot for Discord", difficulty :"Medium"},
+      {idProject: 4, projectImg:"",nameProject : "Book Api", classification:[{name: "Backend"}], language : [{name:"JavaScript", name: "NodeJS"}], description : "Api for books of Latam", difficulty : "High", link: ''},
+      {idProject:5, projectImg :"", nameProject:"AlvaBlog", classification : [{name:"Backend"}, {name:"Frontend"}]}
+    ]    
   if (loading) {
       return <Loading/>
   }else{
-    return <div className='ctn-slider-projects'>
-        <div id='slider-title'>
-          <h1 id='title-projects'>Proyectos</h1>
-        </div>
-        <div id='slider-project'>
-          <div id='project1' className='project'>
-            <div className='ctn-img-project'>
-              <img className='img-project' src='https://raw.githubusercontent.com/AlvaroCoder/AppTareario/master/src/Imagenes/GifAppTareas.gif' alt='gif app de tareas'></img>
-            </div>
-            <div className='ctn-content-project'>
-              <h1 className='title-project'>App de Tareas</h1>
-              <p className='description-project'>Aplicación de escritorio, donde puedes guardar tareas y eliminarlas. Útil para organizarte</p>
-              <div className='ctn-btnlinks'>
-                <a className='link-vgithub' href='https://github.com/AlvaroCoder/AppTareario'>Ver en Github</a>
-              </div>
-            </div>    
-          </div>
-        </div>
+    return <div id='ctn-projects'>
+      <div id='ctn-intro-project'>
+
+      </div>
+      <div id='ctn-projects'>
+        {
+          dataProjects.map((value)=>{
+            return <Project data={value}/>
+          })
+        }
+      </div>
     </div>;
   }
 }
