@@ -12,7 +12,7 @@ export default function Home() {
                     <h1 id='title-home1' className='text-animate'>{textHello}</h1>
                     <h2 id='title-home2' className='text-animate'>I'm Alvaro</h2>
                     <h3 id='title-home3' className='text-animate'>UI/UX designer and freelancer</h3>
-                    <p  id='btn-continue'><Link style={{color:'#1D3557', fontWeight:'bold'}} to='/About'>Continue to About</Link></p>      
+                    <p  id='btn-continue'><Link style={{ fontWeight:'bold'}} to='/About'><span>Continue to About</span></Link></p>      
                 </div>    
             </div>
            <div id='ctn-sun'>
