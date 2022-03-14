@@ -5,6 +5,7 @@ import App from './App';
 import "./Styles/Home.css";
 import "./Styles/About.css";
 import "./Styles/Projects.css";
+import "./Styles/Contact.css";
 render(
   <React.StrictMode>
     <App />

@@ -1,6 +1,8 @@
 import React,{useEffect, useState} from 'react';
 import BanderaPeru from "../icons/banderaPeru.png"
 import { Loading } from '../Elements/Loading';
+import { Link } from 'react-router-dom';
+import JAVALOGO from '../icons/JavaLogo.png'
 
 export default function About() {
   const [loading, setLoading] = useState(true);
@@ -11,6 +13,7 @@ export default function About() {
 
     return ()=>clearTimeout(timeout)
   }, []);
+  const Skills = []
   if (loading) {
     return <Loading/>
   }else{
@@ -52,7 +55,27 @@ export default function About() {
             </div>
           </div>
           <div id='img-cv'>
-
+          </div>
+        </section>
+        <section className='ctn-banner-hire'>
+          <p className='hire-text'>
+            I'm available for freelancer projects
+          </p>
+          <div className='btn-hire'>
+            <p><Link to='/Contact'><span className='text-hire'>Contact Me</span></Link></p>
+          </div>
+        </section>
+        <section className='ctn-skills'>
+          <h1>My Skills</h1>
+          <div className='ctn-bar-skills'>
+              <div className='ctn-img-skills'>
+                <img className='img-bar-skill' src={JAVALOGO} alt='Logo de JAVA'></img>
+                <p className='text-bar-skil'>JAVA</p>
+              </div>
+              <div id='80' className='bar-skill'>
+                <div className='bar-prctje'></div>
+                <p>80%</p>
+              </div>
           </div>
         </section>
       </div>
