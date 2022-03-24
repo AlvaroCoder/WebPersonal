@@ -1,7 +1,7 @@
 import React,{useState}  from 'react'
 import {Link} from "react-router-dom";
 import Logo from "../icons/LogoAlvaWeb2.png";
-export  const Nav = () => {
+const Nav = () => {
     const [isActive, setIsActive] = useState(false);
     const style ={
         color :"white",
@@ -58,3 +58,4 @@ export  const Nav = () => {
         </nav>
 )
 }
+export default Nav;

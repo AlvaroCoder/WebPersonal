@@ -1,6 +1,5 @@
 import React,{useEffect,useState} from 'react';
-import { Loading } from '../Elements/Loading';
-import {Project} from "../Elements/Project";
+import { Loading,Project } from '../Elements';
 
 function Proyectos() {
     const [loading, setLoading] = useState(true);
@@ -19,16 +18,22 @@ function Proyectos() {
       return <Loading/>
   }else{
     return <div id='ctn-projects'>
-      <div id='ctn-intro-project'>
+      <h1>My projects</h1>
+      <div id='ctn-all-projects'>
+          {
+            dataProjects.map((value)=>{
+              return <div key={value.idProject} className='card-project'>
+                        <div className='card-front'>
+                          <h1>{value.nameProject}</h1>
+                        </div>
+                        <div>
+                          
+                        </div>
+                    </div>
+            })
+          }
+      </div>
 
-      </div>
-      <div id='ctn-projects'>
-        {
-          dataProjects.map((value)=>{
-            return <Project data={value}/>
-          })
-        }
-      </div>
     </div>;
   }
 }

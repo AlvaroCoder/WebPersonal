@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Loading = () => {
+const Loading = () => {
     return (
     <div className='ctn-transition'>
         <div className='transition-cover'></div>
@@ -8,3 +8,4 @@ export const Loading = () => {
     </div>
     )
 }
+export default Loading;

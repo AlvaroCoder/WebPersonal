@@ -1,9 +1,10 @@
 import React,{useEffect, useState} from 'react';
 import BanderaPeru from "../icons/banderaPeru.png"
-import { Loading } from '../Elements/Loading';
 import { Link } from 'react-router-dom';
-import JAVALOGO from '../icons/JavaLogo.png'
-
+import JAVALOGO from '../icons/JavaLogo.png';
+import REACTLOGO from '../icons/ReactLogo.png';
+import PYTHONLOGO from '../icons/PythonLogo.png';
+import {BarSkill, Loading, Footer} from '../Elements'
 export default function About() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -13,7 +14,11 @@ export default function About() {
 
     return ()=>clearTimeout(timeout)
   }, []);
-  const Skills = []
+  const Skills = [
+    {nombre:'JAVA', img : JAVALOGO, prctje : 80},
+    {nombre: 'React', img : REACTLOGO, prctje : 70},
+    {nombre:'Python', img:PYTHONLOGO, prctje: 60}
+  ]
   if (loading) {
     return <Loading/>
   }else{
@@ -21,8 +26,7 @@ export default function About() {
       <div id='ctn-about'>
         <section className='ctn-intro-about'>
           <div className='ctn-hacker'>
-          <div id='hacker'>
-          </div>
+            <div id='hacker'></div>
           </div>
           <div className='ctn-panel-hacker'>
             <div id='panel-hacker'> 
@@ -45,17 +49,14 @@ export default function About() {
               design, desktop applications and <br></br>
               Fullstack JS developer.<br></br>
             </p>
-            <p>
-            Read More in my CV
-            </p>
-            <div id='btn-download'>
-              <p>
-                Download CV
-              </p>
-            </div>
+            <p>Read More in my CV</p>
+              <div id='btn-download'>
+                <p>
+                  Download CV
+                </p>
+              </div>
           </div>
-          <div id='img-cv'>
-          </div>
+          <div id='img-cv'></div>
         </section>
         <section className='ctn-banner-hire'>
           <p className='hire-text'>
@@ -66,18 +67,14 @@ export default function About() {
           </div>
         </section>
         <section className='ctn-skills'>
-          <h1>My Skills</h1>
-          <div className='ctn-bar-skills'>
-              <div className='ctn-img-skills'>
-                <img className='img-bar-skill' src={JAVALOGO} alt='Logo de JAVA'></img>
-                <p className='text-bar-skil'>JAVA</p>
-              </div>
-              <div id='80' className='bar-skill'>
-                <div className='bar-prctje'></div>
-                <p>80%</p>
-              </div>
-          </div>
+          <h1 id='title-skills' >My Skills</h1>
+          {
+            Skills.map((elem)=>{
+              return <BarSkill values={elem}/>
+            })
+          }
         </section>
+        <Footer/>
       </div>
     );
   }

@@ -190,6 +190,7 @@ span{
     color: #F1FAEE;
     font-size: 1.2rem;
     border-radius: 20px;
+    text-align: center;
 }
 .text-bar-skill{
     z-index: 3;
@@ -202,9 +203,11 @@ span{
     justify-content: center;
     align-items: center;
 }
+#title-skills{
+    font-size: 2rem;
+}
 .bar-prctje{
     position: absolute;
-    width: 80%;
     height: 7vh;
     background-color: #E63946;
     border-radius: 20px 0px 0px 20px;
@@ -212,4 +215,21 @@ span{
 .img-bar-skill{
     width: 60px;
     height: 60px;
+}
+.text-skill{
+    margin: 0px;
+    margin-top: .5em;
+}
+#skill-React{
+    animation-name: moveCircular;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes moveCircular {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
